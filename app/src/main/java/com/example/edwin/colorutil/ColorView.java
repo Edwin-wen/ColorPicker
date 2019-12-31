@@ -39,14 +39,14 @@ public class ColorView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
 
-//        canvas_565.drawColor(0xFFFFFFFF);
         bitmap_565 = Bitmap.createBitmap(mViewWidth / 2, mHeight, confing565);
         canvas_565.setBitmap(bitmap_565);
+       canvas_565.drawColor(0xFFFFFFFF);
         canvas_565.drawColor(mCurrentColor);
 
-//        canvas_8888.drawColor(0xFFFFFFFF);
         bitmap_8888 = Bitmap.createBitmap(mViewWidth / 2, mHeight, config8888);
         canvas_8888.setBitmap(bitmap_8888);
+       canvas_8888.drawColor(0xFFFFFFFF);
         canvas_8888.drawColor(mCurrentColor);
 
 
